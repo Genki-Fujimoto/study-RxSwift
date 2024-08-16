@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		37708F7A2C6EDE4C009581F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F792C6EDE4C009581F5 /* AppDelegate.swift */; };
 		37708F7C2C6EDE4C009581F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F7B2C6EDE4C009581F5 /* SceneDelegate.swift */; };
-		37708F7E2C6EDE4C009581F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F7D2C6EDE4C009581F5 /* ViewController.swift */; };
+		37708F7E2C6EDE4C009581F5 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F7D2C6EDE4C009581F5 /* TodoListViewController.swift */; };
 		37708F812C6EDE4C009581F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37708F7F2C6EDE4C009581F5 /* Main.storyboard */; };
 		37708F832C6EDE4E009581F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37708F822C6EDE4E009581F5 /* Assets.xcassets */; };
 		37708F862C6EDE4E009581F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37708F842C6EDE4E009581F5 /* LaunchScreen.storyboard */; };
-		37708F8E2C6EDF0B009581F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F8D2C6EDF0B009581F5 /* DetailViewController.swift */; };
+		37708F932C6EEA65009581F5 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F922C6EEA65009581F5 /* TopViewController.swift */; };
+		37708F952C6F0FD2009581F5 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F942C6F0FD2009581F5 /* BeaconManager.swift */; };
+		37708F972C6F1291009581F5 /* BeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F962C6F1291009581F5 /* BeaconViewController.swift */; };
+		37708F992C6F12B7009581F5 /* BeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F982C6F12B7009581F5 /* BeaconViewModel.swift */; };
 		ECEC9F6C6D06DDD46B87CE76 /* Pods_Study_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D19FD7B52A6F2AA27652581 /* Pods_Study_RxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +24,15 @@
 		37708F762C6EDE4C009581F5 /* Study-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37708F792C6EDE4C009581F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37708F7B2C6EDE4C009581F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37708F7D2C6EDE4C009581F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37708F7D2C6EDE4C009581F5 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		37708F802C6EDE4C009581F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37708F822C6EDE4E009581F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37708F852C6EDE4E009581F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37708F872C6EDE4E009581F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37708F8D2C6EDF0B009581F5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		37708F922C6EEA65009581F5 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		37708F942C6F0FD2009581F5 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		37708F962C6F1291009581F5 /* BeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewController.swift; sourceTree = "<group>"; };
+		37708F982C6F12B7009581F5 /* BeaconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewModel.swift; sourceTree = "<group>"; };
 		68E513044837B227D7840C50 /* Pods-Study-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-Study-RxSwift/Pods-Study-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		742D3A54D5E9F54A0E2B429A /* Pods-Study-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Study-RxSwift/Pods-Study-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		9D19FD7B52A6F2AA27652581 /* Pods_Study_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,14 +73,41 @@
 			children = (
 				37708F792C6EDE4C009581F5 /* AppDelegate.swift */,
 				37708F7B2C6EDE4C009581F5 /* SceneDelegate.swift */,
-				37708F7D2C6EDE4C009581F5 /* ViewController.swift */,
-				37708F8D2C6EDF0B009581F5 /* DetailViewController.swift */,
+				37708F8F2C6EE987009581F5 /* Model */,
+				37708F912C6EE9A7009581F5 /* View */,
+				37708F902C6EE98F009581F5 /* ViewModel */,
 				37708F7F2C6EDE4C009581F5 /* Main.storyboard */,
 				37708F822C6EDE4E009581F5 /* Assets.xcassets */,
 				37708F842C6EDE4E009581F5 /* LaunchScreen.storyboard */,
 				37708F872C6EDE4E009581F5 /* Info.plist */,
 			);
 			path = "Study-RxSwift";
+			sourceTree = "<group>";
+		};
+		37708F8F2C6EE987009581F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37708F942C6F0FD2009581F5 /* BeaconManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37708F902C6EE98F009581F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37708F982C6F12B7009581F5 /* BeaconViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		37708F912C6EE9A7009581F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37708F922C6EEA65009581F5 /* TopViewController.swift */,
+				37708F7D2C6EDE4C009581F5 /* TodoListViewController.swift */,
+				37708F962C6F1291009581F5 /* BeaconViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4E835E0E181CD05866BC3C09 /* Frameworks */ = {
@@ -209,10 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37708F7E2C6EDE4C009581F5 /* ViewController.swift in Sources */,
+				37708F7E2C6EDE4C009581F5 /* TodoListViewController.swift in Sources */,
+				37708F992C6F12B7009581F5 /* BeaconViewModel.swift in Sources */,
 				37708F7A2C6EDE4C009581F5 /* AppDelegate.swift in Sources */,
 				37708F7C2C6EDE4C009581F5 /* SceneDelegate.swift in Sources */,
-				37708F8E2C6EDF0B009581F5 /* DetailViewController.swift in Sources */,
+				37708F952C6F0FD2009581F5 /* BeaconManager.swift in Sources */,
+				37708F972C6F1291009581F5 /* BeaconViewController.swift in Sources */,
+				37708F932C6EEA65009581F5 /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +404,9 @@
 				DEVELOPMENT_TEAM = 5T25Z3W9BF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Study-RxSwift/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "位置情報";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "位置情報";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -397,6 +436,9 @@
 				DEVELOPMENT_TEAM = 5T25Z3W9BF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Study-RxSwift/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "位置情報";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "位置情報";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
