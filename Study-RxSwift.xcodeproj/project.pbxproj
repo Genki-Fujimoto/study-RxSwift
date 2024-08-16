@@ -17,6 +17,10 @@
 		37708F952C6F0FD2009581F5 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F942C6F0FD2009581F5 /* BeaconManager.swift */; };
 		37708F972C6F1291009581F5 /* BeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F962C6F1291009581F5 /* BeaconViewController.swift */; };
 		37708F992C6F12B7009581F5 /* BeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37708F982C6F12B7009581F5 /* BeaconViewModel.swift */; };
+		37ABDEAD2C6F81D900C96D04 /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABDEAC2C6F81D900C96D04 /* ApiModel.swift */; };
+		37ABDEAF2C6F823C00C96D04 /* PexelsApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABDEAE2C6F823C00C96D04 /* PexelsApiViewController.swift */; };
+		37ABDEB12C6F861100C96D04 /* PexelesApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABDEB02C6F861100C96D04 /* PexelesApiViewModel.swift */; };
+		37ABDEB42C6F866D00C96D04 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 37ABDEB32C6F866D00C96D04 /* Alamofire */; };
 		ECEC9F6C6D06DDD46B87CE76 /* Pods_Study_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D19FD7B52A6F2AA27652581 /* Pods_Study_RxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,9 @@
 		37708F942C6F0FD2009581F5 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 		37708F962C6F1291009581F5 /* BeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewController.swift; sourceTree = "<group>"; };
 		37708F982C6F12B7009581F5 /* BeaconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewModel.swift; sourceTree = "<group>"; };
+		37ABDEAC2C6F81D900C96D04 /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
+		37ABDEAE2C6F823C00C96D04 /* PexelsApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsApiViewController.swift; sourceTree = "<group>"; };
+		37ABDEB02C6F861100C96D04 /* PexelesApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelesApiViewModel.swift; sourceTree = "<group>"; };
 		68E513044837B227D7840C50 /* Pods-Study-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-Study-RxSwift/Pods-Study-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		742D3A54D5E9F54A0E2B429A /* Pods-Study-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Study-RxSwift/Pods-Study-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		9D19FD7B52A6F2AA27652581 /* Pods_Study_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECEC9F6C6D06DDD46B87CE76 /* Pods_Study_RxSwift.framework in Frameworks */,
+				37ABDEB42C6F866D00C96D04 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				37708F942C6F0FD2009581F5 /* BeaconManager.swift */,
+				37ABDEAC2C6F81D900C96D04 /* ApiModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				37708F982C6F12B7009581F5 /* BeaconViewModel.swift */,
+				37ABDEB02C6F861100C96D04 /* PexelesApiViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -106,6 +116,7 @@
 				37708F922C6EEA65009581F5 /* TopViewController.swift */,
 				37708F7D2C6EDE4C009581F5 /* TodoListViewController.swift */,
 				37708F962C6F1291009581F5 /* BeaconViewController.swift */,
+				37ABDEAE2C6F823C00C96D04 /* PexelsApiViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,6 +156,9 @@
 			dependencies = (
 			);
 			name = "Study-RxSwift";
+			packageProductDependencies = (
+				37ABDEB32C6F866D00C96D04 /* Alamofire */,
+			);
 			productName = "Study-RxSwift";
 			productReference = 37708F762C6EDE4C009581F5 /* Study-RxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 37708F6D2C6EDE4C009581F5;
+			packageReferences = (
+				37ABDEB22C6F866D00C96D04 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 37708F772C6EDE4C009581F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,8 +263,11 @@
 				37708F992C6F12B7009581F5 /* BeaconViewModel.swift in Sources */,
 				37708F7A2C6EDE4C009581F5 /* AppDelegate.swift in Sources */,
 				37708F7C2C6EDE4C009581F5 /* SceneDelegate.swift in Sources */,
+				37ABDEAD2C6F81D900C96D04 /* ApiModel.swift in Sources */,
 				37708F952C6F0FD2009581F5 /* BeaconManager.swift in Sources */,
+				37ABDEAF2C6F823C00C96D04 /* PexelsApiViewController.swift in Sources */,
 				37708F972C6F1291009581F5 /* BeaconViewController.swift in Sources */,
+				37ABDEB12C6F861100C96D04 /* PexelesApiViewModel.swift in Sources */,
 				37708F932C6EEA65009581F5 /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +499,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37ABDEB22C6F866D00C96D04 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37ABDEB32C6F866D00C96D04 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37ABDEB22C6F866D00C96D04 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37708F6E2C6EDE4C009581F5 /* Project object */;
 }

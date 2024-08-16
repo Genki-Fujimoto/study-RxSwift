@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 import RxSwift
 import RxCocoa
 
@@ -21,6 +20,18 @@ class BeaconViewController: UIViewController {
         super.viewDidLoad()
         
         setupTableViewBinding()
+        setupNavigationBar()
+    }
+    
+    // navigationBarの設定
+    private func setupNavigationBar(){
+        navigationItem.title = "ビーコン取得"
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(
+                title:  "back",
+                style:  .plain,
+                target: nil,
+                action: nil
+            )
     }
     
     // TableViewの設定

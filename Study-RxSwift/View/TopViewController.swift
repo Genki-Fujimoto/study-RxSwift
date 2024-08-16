@@ -14,6 +14,7 @@ import RxCocoa
 /// .subscribeは、Observableのデータストリームに対してリスナーを設定し、イベントが発生したときに何かしらの処理を実行
 /// .withLatestFrom 指定されたObservable（ここではtodoItems）の最新の値を取得
 /// BehaviorRelay: 最新の値を保持し、購読者に対してその最新の値を提供するRelayの一種
+/// bindメソッドでバインドできるのは通常、AnyObserverやBinder
 /// デリゲートを使用しないで実装が可能
 
 
@@ -22,13 +23,26 @@ class TopViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var disposeBag = DisposeBag()
-    private var stydyItems = BehaviorRelay<[String]>(value: ["todoList","ビーコン取得","Pixcels API"])
+    private var stydyItems = BehaviorRelay<[String]>(value: ["TODO リスト","ビーコン取得","Pixcels API"])
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // 初期設定
         self.setupTableViewBinding()
+        self.setupNavigationBar()
+        
+    }
+    
+    // navigationBarの設定
+    private func setupNavigationBar(){
+        navigationItem.title = "RsSwift 学習リスト"
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(
+                title:  "back",
+                style:  .plain,
+                target: nil,
+                action: nil
+            )
     }
 
     // TableViewの設定
@@ -62,7 +76,7 @@ class TopViewController: UIViewController {
         case 1:
             identifier = "BeaconViewController"
         case 2:
-            identifier = "TodoListViewController"
+            identifier = "PexelsApiViewController"
         default:
             return // その他のケースでは何もしない
         }
