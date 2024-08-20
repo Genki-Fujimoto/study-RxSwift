@@ -11,26 +11,43 @@ import RxSwift
 
 class PexelesApiViewModel {
     
+/* searchWordに値が渡される:
+    
+    外部のコードがsearchWordに対して新しい検索ワードを渡します（onNext("検索ワード")）。
+    searchWordからsearchWordSubjectに値が渡される:
+
+    searchWordSubject.asObserver()を通じて、その値はsearchWordSubjectに渡されます。
+    searchWordSubjectがイベントを発行:
+
+    searchWordSubjectは、新しい検索ワードを受け取ると、内部でその値を購読しているsubscribeが実行され、searchEvents(keyword:)が呼び出されます。
+*/
+
+
     private let disposeBag = DisposeBag()
     
-    // 検索ワードを受け取るためのObserver
+    // 検索ワードを受け取るための Observer
     private let searchWordSubject = PublishSubject<String>()
     
-    // データを保持するためのPublishSubject
+    // データを保持するための PublishSubject
     private let apiSubject = PublishSubject<Api?>()
     
-    // 外部からアクセス可能なObservable
+    // 外部からアクセス可能な Observable
     var apiObservable: Observable<Api?> {
         return apiSubject.asObservable()
     }
     
-    // 外部からアクセス可能なObservable
+    // 外部からアクセス可能な Observable
     var searchWord: AnyObserver<String> {
             return searchWordSubject.asObserver()
     }
     
+    /*
+    searchWordSubjectは、init()内でsubscribeされています。
+    これにより、searchWordSubjectが新しい検索ワードを受け取るたびに、そのワードに基づいてsearchEvents(keyword:)が呼び出されます
+    */
     
     init() {
+        // searchWordSubjectが発行するイベントを受け取って(subscribe)処理する
         searchWordSubject
             .distinctUntilChanged() // 同じワードの連続発行を無視
             .subscribe(onNext: { [weak self] keyword in

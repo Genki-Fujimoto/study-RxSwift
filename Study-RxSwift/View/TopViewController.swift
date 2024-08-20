@@ -16,6 +16,32 @@ import RxCocoa
 /// BehaviorRelay: 最新の値を保持し、購読者に対してその最新の値を提供するRelayの一種
 /// bindメソッドでバインドできるのは通常、AnyObserverやBinder
 /// デリゲートを使用しないで実装が可能
+///
+/// 
+///
+/*
+ Observable.of
+ BehaviorRelay
+ 主な違い
+ データの変更:
+
+ Observable.ofはデータのストリームを提供し、発行後はデータを変更できません。
+ BehaviorRelayはデータの状態を保持し、変更可能です。
+ データの発行:
+
+ Observable.ofは一度だけデータを発行し、完了します。
+ BehaviorRelayはデータが更新されるたびに新しい値を発行し続けます。
+ 状態の保持:
+
+ Observable.ofは状態を保持しません。
+ BehaviorRelayは最新の状態を常に保持し、リスナーに最新の値を提供します。
+ 使用例
+ Observable.of: 一度限りのデータ発行が必要な場合、例えば初期データの提供など。
+ BehaviorRelay: データの状態を管理し、UIコンポーネントと連携させる場合、例えばリストのデータソースやユーザー入力の状態など。
+ 用途に応じて、ObservableまたはBehaviorRelayを選択してください。
+ 
+ 
+ */
 
 
 class TopViewController: UIViewController {

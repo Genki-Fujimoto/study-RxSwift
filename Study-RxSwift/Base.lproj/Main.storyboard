@@ -184,12 +184,47 @@
                                 <rect key="frame" x="0.0" y="115" width="393" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="kre-Sx-ATL">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="44.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="kre-Sx-ATL">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kre-Sx-ATL" id="46E-sY-EKn">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="撮影者の名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0o-GR-S31">
+                                                    <rect key="frame" x="141" y="92" width="73" height="10"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3JG-Dq-ukf">
+                                                    <rect key="frame" x="20" y="10" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="Pfz-lc-jM3"/>
+                                                        <constraint firstAttribute="width" constant="100" id="vkd-jf-jy8"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作品名" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDK-7j-QE6">
+                                                    <rect key="frame" x="128" y="11" width="224" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="May-cV-OlP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Q0o-GR-S31" firstAttribute="leading" secondItem="3JG-Dq-ukf" secondAttribute="trailing" constant="21" id="4qG-Md-myD"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Q0o-GR-S31" secondAttribute="trailing" constant="20" symbolic="YES" id="8la-OB-aLc"/>
+                                                <constraint firstItem="lDK-7j-QE6" firstAttribute="leading" secondItem="3JG-Dq-ukf" secondAttribute="trailing" constant="8" id="MEy-mT-ReG"/>
+                                                <constraint firstItem="3JG-Dq-ukf" firstAttribute="leading" secondItem="46E-sY-EKn" secondAttribute="leading" constant="20" id="UkR-a3-hlU"/>
+                                                <constraint firstItem="Q0o-GR-S31" firstAttribute="top" secondItem="lDK-7j-QE6" secondAttribute="bottom" constant="31" id="fzO-BI-Re4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Q0o-GR-S31" secondAttribute="bottom" constant="7" id="s0H-mh-f56"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lDK-7j-QE6" secondAttribute="trailing" constant="21" id="sJB-dw-0Ei"/>
+                                                <constraint firstItem="3JG-Dq-ukf" firstAttribute="centerY" secondItem="46E-sY-EKn" secondAttribute="centerY" id="ySW-Z5-sxY"/>
+                                                <constraint firstItem="lDK-7j-QE6" firstAttribute="firstBaseline" secondItem="3JG-Dq-ukf" secondAttribute="firstBaseline" constant="11.333333333333336" id="zX8-OG-s6A"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -214,7 +249,7 @@
                     <navigationItem key="navigationItem" id="eJ7-xo-Fpf"/>
                     <connections>
                         <outlet property="searchBar" destination="Pfl-16-p1P" id="DPz-i0-A2f"/>
-                        <outlet property="tableView" destination="ESN-BK-hA4" id="GO8-hd-JlC"/>
+                        <outlet property="tableView" destination="ESN-BK-hA4" id="yb0-nX-hlf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WH-b1-3CU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
